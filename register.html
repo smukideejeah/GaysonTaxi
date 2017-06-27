@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Gayson Taxi</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+            <div id=botones>
+                <a href="login.html"><button value="entrar" class="botones">Entrar</button></a>
+                <a href="register.html"><button value="Registrarse" class="botones">Registrarse</button></a>
+            </div>
+            <img src="images/logo.png" alt="Logo"/>
+            <nav>
+                <ul>
+                    <li ><a href="index.html">Inicio</a></li>
+                    <li ><a href="Acercade.html">Acerca de</a></li>
+                    <li ><a id=last href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </nav>
+            <h1>Gayson Taxi</h1>
+            <h2>Un servicio para usted</h2>
+        </header>
+    <main>
+        
+        <form action="#" method="post">
+            <table>
+                <tr><th colspan="4"><h3 id=sesion>Registro</h3></th></tr>
+                <tr>
+                    <td><label for=name>Nombre:</label></td>
+                    <td><input type="text" name="name" placeholder="Nombre" required /></td>
+                   
+                </tr>
+                <tr>
+                     <td><label for=ape>Apellido</label></td>
+                    <td><input type="text" name="ape" placeholder="Apellido" /></td>
+                </tr>
+                <tr>
+                    <td><label>Sexo:</label></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><label class="radio1">Masculino</label></td>
+                                <td><input class="radio1" class=inputs id=masculino type="radio" name="sex" value="masculino" /></td>
+                                <td><label class="radio1">Femenino</label></td>
+                                <td><input class="radio1" class=inputs type="radio" name="sex" value="femenino" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Correo:</label></td>
+                    <td><input type="email" name="mail" placeholder="Correo" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="user">Usuario:</label></td>
+                    <td><input type="text" name="user" placeholder="Usuario" /></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Contrase&ntilde;a:</label></td>
+                    <td><input type="password" name="pass" placeholder="Contrase&ntilde;a" required /></td>
+                </tr>
+                <tr>
+                     <td><label for="cpass">Confirmar Contrase&ntilde;a:</label></td>
+                    <td><input type="password" name="cpass" placeholder="Confirmar Contrase&ntilde;a" /><br /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id=subm type="submit" value="Aceptar y registrarse" name="subm" /></td>
+                </tr>
+            </table>
+        </form>
+   
+    
+         </main>
+    <footer> <h6>2017 &copy; Copyright AsRa Labs</h6></footer>
+</body>
+</html>
