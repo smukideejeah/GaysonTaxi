@@ -1,3 +1,2 @@
 # GaysonTaxi
-
-Un servicio de transporte en la ciudad de Leon, Nicaragua
+Aplicación web para reservación de taxi en la ciudad de León Nicaragua.

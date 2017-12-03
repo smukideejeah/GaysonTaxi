@@ -1,11 +1,16 @@
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Gayson Taxi</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nomalize.css" />
+    <meta name="viewport" content="width=480"/>
+    <link rel=Stylesheet href="css/mobile.css" type="text/css" media="screen and (max-width:500px) and (min-width:1px)">
+	<link rel=Stylesheet href="css/style.css" type="text/css" media="screen and (max-width:3600px) and (min-width:501px)">
 </head>
-<body>
-<header>
+<body id=nobodyini>
+<header id=noinicio>
             <div id=botones>
                 <a href="login.html"><button value="entrar" class="botones">Entrar</button></a>
                 <a href="register.html"><button value="Registrarse" class="botones">Registrarse</button></a>
@@ -21,13 +26,13 @@
             <h1>Gayson Taxi</h1>
             <h2>Un servicio para usted</h2>
         </header>
-    <main>
+    <main id=nomaini>
         
-        <form action="#" method="post">
+        <form id="reg" action="#" method="post">
             <table>
                 <tr><th colspan="4"><h3 id=sesion>Registro</h3></th></tr>
                 <tr>
-                    <td><label for=name>Nombre:</label></td>
+                    <td><label for="name">Nombre:</label></td>
                     <td><input type="text" name="name" placeholder="Nombre" required /></td>
                    
                 </tr>
@@ -41,7 +46,7 @@
                         <table>
                             <tr>
                                 <td><label class="radio1">Masculino</label></td>
-                                <td><input class="radio1" class=inputs id=masculino type="radio" name="sex" value="masculino" /></td>
+                                <td><input class="radio1" class=inputs id=masculino type="radio" name="sex" value="masculino" checked /></td>
                                 <td><label class="radio1">Femenino</label></td>
                                 <td><input class="radio1" class=inputs type="radio" name="sex" value="femenino" /></td>
                             </tr>
@@ -54,7 +59,7 @@
                 </tr>
                 <tr>
                     <td><label for="user">Usuario:</label></td>
-                    <td><input type="text" name="user" placeholder="Usuario" /></td>
+                    <td><input type="text" name="user" placeholder="Usuario" required/></td>
                 </tr>
                 <tr>
                     <td><label for="pass">Contrase&ntilde;a:</label></td>
@@ -62,16 +67,27 @@
                 </tr>
                 <tr>
                      <td><label for="cpass">Confirmar Contrase&ntilde;a:</label></td>
-                    <td><input type="password" name="cpass" placeholder="Confirmar Contrase&ntilde;a" /><br /></td>
+                    <td><input type="password" name="cpass" placeholder="Confirmar Contrase&ntilde;a" required /><br /></td>
+                </tr>
+                <tr>
+                    <td><label for="tel">Telefono:</label></td>
+                    <td><input type="number" name="tel" placeholder="Telefono" required/><br /></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Fecha de Nacimiento:</label></td>
+                    <td><input type="date" name="nac" placeholder="Fecha de Nacimiento" required /><br /></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input id=subm type="submit" value="Aceptar y registrarse" name="subm" /></td>
+                    <td><input id="subm" type="submit" value="Aceptar y registrarse"  name="subm" /></td>
                 </tr>
             </table>
         </form>
-   
-    
+        
+        <script src="js/jquery.js"></script>
+        <script src="js/js.js"></script>
+        <script src="js/start.js"></script>
+          
          </main>
     <footer> <h6>2017 &copy; Copyright AsRa Labs</h6></footer>
 </body>

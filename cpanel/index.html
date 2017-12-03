@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gayson Taxi</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styleweb.css" />
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="CargaUsuario.js"></script>
+    <script type="text/javascript" src="nuevos.js"></script>
+</head>
+<body>
+    <div id="light">
+        <form id="fomlight" method="post" action="#" onsubmit="envia()">
+            <div id="enca"><p id="cab">Nuevo Favorito</p></div>
+            <div id="datos">
+                 <input type="text" id="titulo" name="titulo" placeholder="Titulo" required/>
+                <input type="text" id="Dir_O" name="Dir_destino" placeholder="Direccion Destino" required/>
+                <input id="anadir" type="submit" value="A&ntilde;adir" name="subm"/>
+                <button id="cancel"  onclick="menu('light')">Cancelar</button>
+            </div>
+           
+        </form>
+    </div>
+    <div id="light2">
+        <form id="fomlight2" method="post" action="#" onsubmit="enviaCot()">
+            <div id="enca2"><p id="cab">Nueva ruta cotidiana</p></div>
+            <table id="t1">
+                <tr>
+                    <td><br><input type="text" id="Dir_o" name="Dir_o" placeholder="Direccion Origen" required/></td>
+                    <td rowspan="3">
+                        <table>
+                            <tr>
+                                <td colspan="2" id="titolodia"><label>Elija el dia:</label></td>
+                            </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check" name="ck1" id="ck1"/></td>
+                            <td class="dias"><label class="label">Lunes</label></td>
+
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" class="check" name="ck2" id="ck2" /></td>
+                            <td class="dias"><label class="label">Martes</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check" name="ck3" id="ck3"/></td>
+                            <td class="dias"><label class="label">Miercoles</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check" name="ck4" id="ck4"/></td>
+                            <td class="dias"><label class="label">Jueves</label></td>
+                        </tr>
+                            <tr>
+                            <td><input type="checkbox" class="check" name="ck5" id="ck5"/></td>
+                            <td class="dias"><label class="label">Viernes</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check" name="ck6" id="ck6"/></td>
+                            <td class="dias"><label class="label">Sabado</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check" name="ck7" id="ck7"/></td>
+                            <td class="dias"><label class="label">Domingo</label></td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><br><input type="text" id="Dir_d" name="Dir_d" placeholder="Direccion Destino" required/></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="reloj" id="textoH">Hora</label><br><input id="hora" type="time" id="reloj" name="reloj" required /></td>
+                </tr>
+                <tr>
+                    <td><input id="anadir2" class="botones" type="submit" value="A&ntilde;adir" name="subm"/></td>
+                    <td><button class="botones" onclick="menu('light2')">Cancelar</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="list3">
+        <form id="fomlight3" method="post" action="#" onsubmit="enviaRes()">
+            <div id="enca"><p id="cab">Solicitud</p></div>
+            <table id="t1">
+                <tr>
+                    <td colspan="2"><br><input type="text" id="Dir_o" name="Dir_o" placeholder="Direccion Origen" required/></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><br><input type="text" id="Dir_d" name="Dir_d" placeholder="Direccion Destino" required/></td>
+                    
+                </tr>
+                <tr>
+                    <td><input class="botones" type="submit" value="Aceptar" name="subm"/></td>
+                    <td><button class="botones" onclick="menu('list3')">Cancelar</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <header >
+            <div id=botones>
+                <a ><Button class="botones" id="buton" onclick="menu('naver')">Mi cuenta</Button></a>
+                <nav id="naver">
+                    <ul id="uli">
+                        <li class="lis"><Button class="sas" onclick="menu('light2')">Agregar ruta cotidiana</Button></li>
+                        <li class="lis"><Button class="sas" onclick="menu('light')">Agregar favorito</Button></li>
+                        <li class="lis"><Button class="sas">Editar cuenta</Button></li>
+                        <li class="lis"><Button class="sas" onclick="salir()">Salir</Button></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="../images/logo.png" alt="Logo"/>
+            <h1>Gayson Taxi</h1>
+            <h2 id="subtitulo">Un servicio para usted</h2>
+        </header>
+    <main>
+         <table align="center" id="panel" >
+             <tr><th><h3 id="sal">Bienvenido </h3></th>
+               <th>
+                    <a><Button class="botones" id="nuevoserver" onclick="menu('list3')">Solicitar taxi</Button></a>
+               </th> 
+             </tr>
+            <tr>
+                <td id="td1"><div class="bor">Historial</div></td>
+
+                <td id="td2"><div class="bor">Favoritos</div></td>
+            </tr>
+            <tr>
+               <td id="td3" ><div id="cot"><div class="bor">Rutas cotidianas</div></div></td>
+            </tr>
+        </table>
+
+      </main>
+    <footer><h6>2017 &copy; Copyright AsRa Labs</h6></footer>
+
+</body>
+</html>

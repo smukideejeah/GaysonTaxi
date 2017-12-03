@@ -1,0 +1,47 @@
+#page-wrap{
+  margin:0 auto;
+  width:800px;
+}
+#gallery{
+  margin:0 auto;
+  width:500px;
+}
+img{
+  display:block;
+  width:500px;
+}
+.button{
+  border: none;
+  background-color: #008CBA;
+  color:white;
+  text-align: center;
+  font-size:1.2em;
+  margin:5px;
+  padding:10px;
+  border-radius: 8px;
+  -webkit-transition-duration:0.4s;
+  transition-duration:0.4s;
+  margin-top:10px;
+  width:100px;
+  cursor:pointer;
+}
+.button span{
+  cursor:pointer;
+  display:inline-block;
+  position:relative;
+  transition:0.4s;
+}
+.button:hover{
+  background-color:gray;
+}
+#left-button{
+  float:left;
+  margin-left:20px;
+}
+#right-button{
+  float:right;
+  margin-right:20px;
+}
+.hidden{
+  display:none;
+}

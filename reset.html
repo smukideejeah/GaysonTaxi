@@ -1,12 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Gayson Taxi</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nomalize.css" />
+    <meta name="viewport" content="width=480"/>
+    <link rel=Stylesheet href="css/mobile.css" type="text/css" media="screen and (max-width:500px) and (min-width:1px)">
+	<link rel=Stylesheet href="css/style.css" type="text/css" media="screen and (max-width:3600px) and (min-width:501px)">
 </head>
-<body>
-    <header>
+<body id=nobodyini>
+    <header id=noinicio>
             <div id=botones>
                 <a href="login.html"><button value="entrar" class="botones">Entrar</button></a>
                 <a href="register.html"><button value="Registrarse" class="botones">Registrarse</button></a>
@@ -22,9 +26,9 @@
             <h1>Gayson Taxi</h1>
             <h2>Un servicio para usted</h2>
         </header>
-    <main>
+    <main id=nomaini>
         
-        <form id=log action="#" method="post" >
+        <form id="reset" action="#" method="post" >
             <div id="sabe">
                     <th><h3 id=sesion>Cambiar Contrase&ntilde;a</h3> </th>
                 </div>
@@ -32,12 +36,12 @@
                 
                 <tr>
                     <td>
-                        <input type="password" name="1password" placeholder="Contrase&ntilde;a" required/>
+                        <input type="password" name="pass1" placeholder="Contrase&ntilde;a" required/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="password" name="2password" placeholder="Confirmar Contrase&ntilde;a"/>
+                        <input type="password" name="pass2" placeholder="Confirmar Contrase&ntilde;a"/>
                     </td>
                 </tr>
                 <tr>
@@ -47,7 +51,9 @@
                 </tr>
             </table>
         </form>
-    
+        <script src="js/jquery.js"></script>
+        <script src="js/reset.js"></script>
+        <script src="js/start.js"></script>
     
 </main>
     <footer><h6>2017 &copy; Copyright AsRa Labs</h6></footer>

@@ -4,22 +4,50 @@ html, body{
     margin: 0px;
     height: 100%;
 }
-body{
+#bodyini{
     width: 100%;
     position: relative;
     font-family: 'Helvetica';
-    background-color: rgb(240,240,240);
+    background: url(../images/leon.jpg);
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
 }
-main{
+#menub{
+    display: none;
+}
+#nobodyini{
+    width: 100%;
+    position: relative;
+    font-family: 'Helvetica';
+    background-color: beige;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+#maini{
     min-height: 60%;
+    background-color:rgba(0,0,0,0.6);
 }
-header{
-    background-color:cadetblue;
+#nomaini{
+    
+    min-height: 60%;
+     
+}
+#inicio{
     margin: 0px;
     color: white;
     width: 100%;
     height: 200px;
 }
+#noinicio{
+    background-color: cadetblue;
+    margin: 0px;
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+
 .sections #an h3{
     font-size: 90px;
     padding-top: 70px;
@@ -30,6 +58,7 @@ header{
     height: 100px;
     background-image: url('../images/9962108_orig.jpg');
     background-position: top;
+    background-position-y: top;
     background-attachment: fixed;
     background-size: cover;
     box-shadow: inset 0 0 15px 0 black;
@@ -71,7 +100,7 @@ ul{
 }
 ul li{
     display: inline;
-    margin 0px;
+    margin: 0px;
     padding: 0px;
     text-align: center;
     
@@ -107,8 +136,8 @@ nav ul li a:hover{
     border: 1px solid orange;
 }
 #anuncio{ 
-    height: 350px;
-    background-image: url('../images/Portada-6-red.jpg');
+    height: 300px;
+    background-image: url('../images/negro.png'),url(../images/Portada-6-red.jpg);
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
@@ -129,14 +158,16 @@ nav ul li a:hover{
     margin: 30px;
     padding: 15px 15px 0px 15px;
     text-align: justify;
-    background-color: lightgrey;
+    color:white;
+    background-color: rgba(0,0,0,0.7);
+    border-radius:5px;
 }
 footer{
     float: left;
     width: 100%;
     height: 80px;
     text-align: center;
-    background-color:cadetblue;
+    background-color:black;
     color:white;
     /*align-self: flex-end;*/
 }
@@ -176,7 +207,6 @@ table tr{
 }
 #subm{
     background-color: lightblue;
-    float: center;
 }
 input{
     width: 300px;
@@ -212,3 +242,39 @@ input{
     border-radius: 5px;
     border: 1px solid  rgba(0,0,0,0);
 }
+#contacto {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Segoe UI;
+    padding: 2px;
+    display: inline;
+}
+
+
+#art {
+    padding:50px;
+
+}
+
+#pp{
+   line-height: 25px;
+   text-align: justify; 
+}
+
+#gayson{
+   margin-left: 565px;
+    width: 120px;
+    height: 42px;
+}
+
+#p2{
+    text-align: center;
+    font-size: 10px;
+}
+
+
+   

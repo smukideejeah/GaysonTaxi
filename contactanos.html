@@ -1,13 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Gayson Taxi</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/nomalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/js.js"></script>
+    <meta name="viewport" content="width=480"/>
+    <link rel=Stylesheet href="css/mobile.css" type="text/css" media="screen and (max-width:500px) and (min-width:1px)">
+	<link rel=Stylesheet href="css/style.css" type="text/css" media="screen and (max-width:3600px) and (min-width:501px)">
 </head>
-<body>
-    <header >
+<body id=nobodyini>
+    <header id=noinicio>
             <div id=botones>
                 <a href="login.html"><button value="entrar" class="botones">Entrar</button></a>
                 <a href="register.html"><button value="Registrarse" class="botones">Registrarse</button></a>
@@ -23,24 +27,28 @@
             <h1>Gayson Taxi</h1>
             <h2>Un servicio para usted</h2>
         </header>
-    <main>
+    <main id=nomaini>
         <section>
-            <form id="forms">
+            <form id="contact" action="#" method="post">
                 <table>
                     <tr>
                         <td><label name="correo">Ingrese su correo</label></td>
-                        <td><input name="text" placeholder="Correo"/></td>
+                        <td><input type="email" name="text" placeholder="Correo" id="correosu" required/></td>
                     </tr>
                     <tr>
-                        <td valign="top" ><label name="correo" >Comentarios:</label></td>
-                        <td><textarea name="comentarios"></textarea></td>
+                        <td valign="top" ><label name="coment" >Comentarios:</label></td>
+                        <td><textarea name="comentarios" id="textA" style="width: 300px;height:200px;" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="tdbuton"><button name="btcontacto" type="submit" id="contacto" onclick="saber()">Listo</button></td>
                     </tr>
                 </table>
             </form>
         </section>
-    
-    
         </main>  
+    <script src="js/jquery.js"></script>
+    <script src="js/start.js"></script>
     <footer ><h6>2017 &copy; Copyright AsRa Labs</h6></footer>
 </body>
 </html>

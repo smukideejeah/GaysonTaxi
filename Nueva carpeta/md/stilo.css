@@ -1,0 +1,29 @@
+@import url('normalize.css');
+#mprincipal{
+    height: auto;
+    overflow: hidden;
+    text-align: left;
+    background-color: forestgreen;
+    display: block;
+}
+#mprincipal>ul{
+ float:left;
+ left:50%;
+ list-style-type:none;
+ margin:0 auto;
+ padding:0;
+ position:relative;
+    background-color: green;
+}
+#mprincipal ul li{
+    float:left;
+ position:relative;
+ right:50%;
+}
+
+.subm{
+    margin: 0;
+    padding: 0;
+    display:block;
+    
+}

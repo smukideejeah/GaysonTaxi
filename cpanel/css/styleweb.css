@@ -1,0 +1,452 @@
+@import url('../css/normalize.css');
+html, body{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    font-family: 'Helvetica';
+    background-color: rgb(220,220,220);
+}
+header{
+    background-color:cadetblue;
+    margin: 0px;
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+
+.sections #an h3{
+    font-size: 90px;
+    padding-top: 70px;
+    color: white;
+}
+
+
+img{
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 241px;
+    height: 84px;
+    font-size: 30px;
+}
+
+
+h1{
+    margin-top: 20px;
+    top: 0px;
+    transform: translate(280px,-100px);
+    width: 230px;
+    text-shadow: 2px 2px 10px lightgray;
+}
+
+
+h2{
+    width: 340px;
+    transform: translate(280px,-120px);
+    font-size: 15px;
+    text-shadow: 2px 2px 5px lightgray;
+}
+
+
+#botones{
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+
+nav{
+    float: right;
+    display: block;
+    margin-top: 60px;
+}
+
+
+ul{
+    height: auto;
+    padding: 5px;
+}
+ul li{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-right: 0;
+    height: 100%;
+    font-size: 25px;
+}
+
+ul li #last{
+    border-right: 1px solid rgba(0,0,0,0.0);   
+}
+nav ul li a:hover{
+    color: blue;
+}
+
+
+.botones{
+    background-color: #e9d600;
+    color: black;
+    border-radius: 3px;
+    border: 1px solid #e9d600;
+    padding: 5px;
+}
+#anuncio{ 
+    height: 350px;
+    background-image: url('../images/Portada-6-red.jpg');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    transform: translate(0px,-90px);
+}
+.sections{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+    
+}
+.artis{
+    display: inline-block;
+    width: 290px;
+    text-align: left;
+    height: 200px;
+    border-bottom: 1px solid gray;
+    margin: 30px;
+    padding: 15px 15px 0px 15px;
+    text-align: justify;
+    background-color: lightgrey;
+}
+footer{
+    float: left;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color:cadetblue;
+    color:white;
+    /*align-self: flex-end;*/
+}
+#sesion{
+    text-align: center;
+    font-size: 40px;
+    color: lightblue;
+    text-shadow: 3px 3px 0px darkcyan;
+}
+#sabe{
+    width: 500px;
+    margin-left: -100px;
+    
+}
+
+h3{
+    text-align:center;
+}
+td{
+    background-color:white;
+    border-radius:5px;
+    vertical-align: top;
+    padding: 5px;
+}
+#td1{
+    width: 70%;
+    height: 400px;
+    padding: 10px;
+    overflow: scroll;
+    padding: 0px;
+}
+#td2{
+    height: 400px;
+    padding: 10px;
+    overflow: scroll;
+    padding: 0px;
+}
+#td3 {
+    height:250px;
+    
+    overflow: scroll;
+    padding: 0px;
+}
+th {
+    height: 20px;
+}
+#panel{
+    border-collapse: separate;
+    border-spacing:15px;
+    margin-bottom: 20px;    
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding: 0px;
+}
+.bor{
+    border-bottom: 1px solid black;
+    background-color: cadetblue;
+    height: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #FFDA33;
+    color: #3a7999;
+    border-radius: 4px;
+    border: 1px solid black;
+    color: black;
+ 
+}
+
+.b{
+    background-color: cadetblue;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    width: 75px;
+}
+.titulo{
+    font-weight: bold;
+}
+
+.table1{
+    width: 100%;
+   
+}
+
+.table1 tr{
+    text-align: center;
+}
+
+
+.trt {
+    width: 100%;
+}
+.cot{
+    width: 70%;
+}
+.favoritos {
+    text-decoration: none;
+}
+.active {
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    width: 75px;
+}
+#naver {
+    display: none;
+    position: absolute;
+	top: -15px;
+	width:  220px;
+    border: 1px solid rgba(0,0,0,0);
+    background-color: white;
+    margin-left: 80%;
+    border-radius: 5px;
+}
+.lis {
+    text-align: right;
+    list-style-type: none;
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+}
+#uli {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.sas {
+    font-size:20px;
+    color: black;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+    text-align: right;
+}
+#light {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+#fomlight {
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    margin-top: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0px;
+}
+#enca {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    background-color: cadetblue;
+    border-radius: 5px 5px 0px 0px;
+    padding-top: 1px;
+}
+#titulo {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: Segoe UI;
+    padding: 2px;
+    display: block;
+    margin-left: 180px;
+}
+#Dir_O{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Segoe UI;
+    padding: 2px;
+    display: block;
+    margin-left: 180px;
+}
+#anadir{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Segoe UI;
+    padding: 2px;
+    float: left;
+    margin-left: 180px;
+}
+#cancel{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: Segoe UI;
+    padding: 2px;
+    display: inline;
+    margin-left: -120px;
+}
+#datos{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+#light2 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+#fomlight2 {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    margin-top: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0px;
+}
+#enca2 {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    background-color: cadetblue;
+    border-radius: 5px 5px 0px 0px;
+    padding-top: 1px;
+}
+.label{
+    color: black;
+    text-align: left;
+}
+.dias{
+    text-align: left;
+}
+#t1{
+    margin: 0 auto;
+}
+#Dir_o {
+     width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: Segoe UI;
+}
+#Dir_d {
+     width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: Segoe UI;
+}
+#nuevoserver {
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+}
+#list3 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.68);   
+}
+#fomlight3 {
+    width: 30%;
+    height: 40%;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    margin-top: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 0px;
+}
+#tablanue {
+    display: none;
+    border: 1px solid black;
+}
+#hora {
+    border-radius: 5px; 
+    border: 1px solid black;
+    font-size: 20px;
+    font-family: Segoe UI;
+}
+#textoH{
+    color: black;
+    
+}
+#titolodia {
+    color: black;
+}
